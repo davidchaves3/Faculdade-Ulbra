@@ -25,6 +25,6 @@ while resp == 's' or resp == 'S':
         
         if resp == 's' or resp == 'S':
             sorte = random.randint(1,100)
-            c = c - c
+            c = 0
             
 print('JOGO FINALIZADO')
