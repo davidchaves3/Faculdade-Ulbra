@@ -4,9 +4,8 @@ c = 0
 num = 0
 resp = 's'
 sorte = random.randint(1, 100)
-print('Adivinhe o número ')
-print(sorte)
 
+print('Adivinhe o número ')
 while resp == 's' or resp == 'S':
 
     num = int(input('digite um número ==>'))
