@@ -1,30 +1,32 @@
 import random
 
-c = 0
-num = 0
-resp = 's'
-sorte = random.randint(1, 100)
+cont = 0
+numeroDigitado = 0
+resposta = 's'
+numeroSorteado = random.randint(1, 100)
 
 print('Adivinhe o número ')
-while resp == 's' or resp == 'S':
+while resposta == 's' or resposta == 'S':
 
-    num = int(input('digite um número ==>'))
-    c = c + 1
+    numeroDigitado = int(input('digite um número :'))
+    cont = cont + 1
     
-    if sorte < num:
-        print('O número é menor')
+    if numeroSorteado < numeroDigitado:
+        print('O número sorteado é menor que o digitado!')
 
-    elif sorte > num:
-        print('O número é maior')
+    elif numeroSorteado > numeroDigitado:
+        print('O número sorteado é maior que o digitado!')
 
     else:
-        print('acertou!')
-        print('O número era {}'.format(sorte))
-        print('Qtd de tentativas ==>{}'.format(c))
-        resp = input('Jogar novamente?[S/N]')
+        print('******************************************')
+        print('Parabéns!!!! Você acertou o número sorteado!')
+        print('O número sorteado era {}'.format(numeroDigitado))
+        print('Quatidade de tentativas {}'.format(cont))
+        print('******************************************')
+        resposta = input('Jogar novamente?[S/N]')
         
-        if resp == 's' or resp == 'S':
-            sorte = random.randint(1,100)
-            c = 0
+        if resposta == 's' or resposta == 'S':
+            numeroSorteado = random.randint(1,100)
+            cont = 0
             
 print('JOGO FINALIZADO')
