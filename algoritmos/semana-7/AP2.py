@@ -10,8 +10,8 @@ print(sorte)
 while resp == 's' or resp == 'S':
 
     num = int(input('digite um número ==>'))
-    print(sorte)
     c = c + 1
+    
     if sorte < num:
         print('O número é menor')
 
@@ -28,5 +28,4 @@ while resp == 's' or resp == 'S':
             sorte = random.randint(1,100)
             c = c - c
             
-        else:
-             print('JOGO FINALIZADO')
+print('JOGO FINALIZADO')
