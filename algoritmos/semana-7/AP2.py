@@ -9,7 +9,7 @@ while resposta == 's' or resposta == 'S':
 
     numeroDigitado = int(input('digite um número :'))
     cont = cont + 1
-    
+
     if numeroSorteado < numeroDigitado:
         print('O número sorteado é menor que o digitado!')
 
@@ -23,9 +23,9 @@ while resposta == 's' or resposta == 'S':
         print('Quatidade de tentativas {}'.format(cont))
         print('******************************************')
         resposta = input('Jogar novamente?[S/N]')
-        
+
         if resposta == 's' or resposta == 'S':
-            numeroSorteado = random.randint(1,100)
+            numeroSorteado = random.randint(1, 100)
             cont = 0
-            
+
 print('JOGO FINALIZADO')
