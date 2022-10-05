@@ -1,6 +1,7 @@
 # EQUPE 6 🔥😎 - David, Arthur, Maeyve, Savio Ramon
-
+import win32
 import random
+
 cont = 0
 numeroDigitado = 0
 resposta = 's'
