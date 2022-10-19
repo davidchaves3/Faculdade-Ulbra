@@ -1,5 +1,3 @@
-from ast import While
-
 
 cont = 0 
 listaNum = []
