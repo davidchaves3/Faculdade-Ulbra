@@ -1,23 +1,26 @@
-from turtle import position
+lista = [10,5,8,20,50,10,5,8,8,60,10,5,5,3,50]
+numberPares = []
+cont = 0
+maior = 0
+somaP = 0
 
-
-listNum = [10,5,8,20,50,10,5,8,8,60,10,5,5,3,50]
-maior = 0 
-cont = 0 
-somaPositivo = 0
-position = []
-tamanhoLista = 0
-
-while cont < len(listNum):
-  num = listNum[cont]
-  tamanho = len(listNum)
-  
-  if num > maior :
-    maior = num 
-  if num > 0 :
-    somaPositivo = somaPositivo + num
-    position.append(listNum[cont])
+while cont < len(lista):
+  number = lista[cont]
+  if number > 0 :
+    somaP = somaP + number
+  if number > maior:
+    maior = number
+  if number%2 == 0 :
+    numberPares.append(cont)
   cont = cont + 1
-  if cont == tamanho :
-    print("Finalizado")
-  
+
+print("========================================")
+print("========================================")
+print("Os 5 primeiros elementos: \n{}\n{}\n{}\n{}\n{}".format(lista[0],lista[1],lista[2],lista[3],lista[4]))
+print("========================================")
+print("A soma dos elementos Positivos:\n{}".format(somaP))
+print("========================================")
+print("A posição dos elemento pares:\n{}".format(numberPares))
+print("========================================")
+print("O maior elemento da lista:\n{}".format(maior))
+print("============= FINALIZADO ===============")
