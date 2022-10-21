@@ -1,4 +1,3 @@
-
 cont = 0 
 listaNum = []
 
