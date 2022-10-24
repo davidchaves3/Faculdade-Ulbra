@@ -17,7 +17,7 @@ print("===========================================")
 word = input("escolha uma palavra da lista:")
 print("===========================================")
 
-while cont < len(listWord):
+while  word in listWord:
   if word == listWord[cont]:
     listWord[cont] = "ELIMINADA"
   cont = cont + 1
