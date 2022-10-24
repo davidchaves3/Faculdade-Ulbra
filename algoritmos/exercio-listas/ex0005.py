@@ -4,10 +4,9 @@ numberNegativo = []
 cont = 0
 
 while cont < len(listNumber):
-  num = listNumber[cont]
-  if num > 0:
+  if listNumber[cont] > 0:
     numberPositivo.append(listNumber[cont])
-  elif num < 0:
+  elif listNumber[cont] < 0:
     numberNegativo.append(listNumber[cont])
   cont = cont + 1
 
