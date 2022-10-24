@@ -15,4 +15,3 @@ print("Numeros Positivos:\n {}".format(numberPositivo))
 print("================================================")
 print("Numeros Negativos:\n {}".format(numberNegativo))
 print("================================================")
-

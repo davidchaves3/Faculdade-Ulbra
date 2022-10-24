@@ -1,20 +1,20 @@
 listNumber = []
-listPositionP = []
-listPositionN = []
 cont = 0
-
+print("===================================================")
 num = int(input("Digite um número ou Digite Zero para encerrar:"))
+print("===================================================")
 
 while num != 0 :
   listNumber.append(num)
-  num = int(input("Digite um número ou Digite Zero para encerrar:")) 
-
+  print("===================================================")
+  num = int(input("Digite um número ou Digite Zero para encerrar:"))
+  print("===================================================")
 print("Lista Criada:\n{}".format(listNumber))
+print("===================================================")
 
 while cont < len(listNumber):
-  if listNumber[cont] > 0 :
-    listPositionP.append(cont)
-  elif listNumber[cont] < 0 :
-    listPositionN.append(cont)
-
+  listNumber[cont] = listNumber[cont] * -1
+  cont = cont + 1
+print("===================================================")
 print("Lista com sinais Trocados:\n{}".format(listNumber))
+print("===================================================")
