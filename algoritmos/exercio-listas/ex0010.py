@@ -9,13 +9,13 @@ while cont < 10:
   cont = cont + 1
 
 cont = 0
-while cont < 11:
+while cont < len(listG):
   if listR[cont] == listG[cont]:
     certa.append(cont + 1)
   else:
     errada.append(cont + 1)
   cont = cont + 1
-
+print("GABARITO DA PROVA:\n{}".format(listG))
 print("O aluno acertou as questões {}".format(certa))
 print("E o aluno errou as questões {}".format(errada))
 
