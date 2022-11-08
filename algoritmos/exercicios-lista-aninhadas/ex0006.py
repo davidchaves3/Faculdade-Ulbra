@@ -9,18 +9,15 @@ while cont < 3:
   dadosIndividual.append(input("Nome:"))
   dadosIndividual.append(int(input("Ano de Nascimento:")))
   calc = dadosIndividual[1]%2
-
   while i < len(signoNum):
     if calc == signoNum[i]:
       dadosIndividual.append(signo[signoNum[i]])
     i = i + 1  
-
   usuarios.append(dadosIndividual)
   cont = cont + 1
 
-print(usuarios)
 cont = 0
 while cont < len(usuarios):
-  print(usuarios[cont])
+  print(f"{usuarios[cont][0]} Nasceu em {usuarios[cont][1]} e o seu signo chinês é {usuarios[cont][2]}")
   cont = cont + 1
   
