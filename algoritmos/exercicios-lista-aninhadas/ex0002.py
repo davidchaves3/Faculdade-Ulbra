@@ -1,24 +1,35 @@
-participantes = []
-participante = []
+maior = 0
+part = []
+parts = []
 notaFinal = []
 cont = 0
-maior = 0
-
-while cont < 3 :
-  participante.append(float(input("Nota do 1ª Jurado:")))
-  participante.append(float(input("Nota do 2ª Jurado:")))
-  participante.append(float(input("Nota do 3º Jurado:")))
-  notaFinal.append( participante[0] + participante[1] + participante[2])
-  participantes.append(participante)
-  participante = []
-  cont = cont + 1
-
-cont = 0
-while cont < len(notaFinal):
-  if notaFinal[cont] > maior:
+j = 0
+# Laço de repetição para entrada de dados dos participantes
+while cont < 10:
+   # laço de repetição para as três notas
+  while j < 3:
+    part.append(float(input("NOTA:")))
+    notaFinal.append(part[0] + part[1] + part[2])
+    j = j + 1
+  parts.append(part)
+  part = []
+# Laço de repetição para imprimir cada nota dos participantes
+  if maior < notaFinal[cont]: 
     maior = notaFinal[cont]
+  cont = cont + 1
 
 cont = 0
-while cont < len(participantes):
-  print(f"Código Participante {cont} NOTAS - {participantes[cont][0],participantes[cont][1],participantes[cont][2]}")
+# Laço de repetição para imprimir cada nota dos participantes
+while cont < 10: 
+  print(f"Código:{cont} NOTAS:{parts[cont]}")
   cont = cont + 1
+
+print("Vencedores:")
+cont = 0
+#Laço de repetição para percorrer toda a lista e verificar se tem empate nas notas finais dos participantes 
+while cont < 10: 
+  if notaFinal[cont] == maior:
+    print(f"Código:{cont}")
+    cont = cont + 1
+
+ 
